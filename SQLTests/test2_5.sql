@@ -24,7 +24,7 @@ WHERE
       SUM(e.quantity) > 100
   )
 GROUP BY
-  c.name, b.name;
+  c.name, b.name
 ORDER BY
   category_name,
   total_quantity_sold DESC;
