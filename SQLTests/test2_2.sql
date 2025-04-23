@@ -2,7 +2,7 @@
 
 SELECT
   email,
-  COUNT(email) AS email_count
+  COUNT(email) email_count
 FROM
   users
 GROUP BY

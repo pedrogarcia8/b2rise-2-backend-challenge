@@ -3,8 +3,8 @@
 CREATE VIEW monthly_summary AS
 SELECT
   account_id,
-  MONTH(transaction_date) AS month,
-  SUM(amount) AS total_amount
+  MONTH(transaction_date) month,
+  SUM(amount) total_amount
 FROM
   transactions
 GROUP BY
