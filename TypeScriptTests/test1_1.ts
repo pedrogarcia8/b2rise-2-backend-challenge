@@ -11,6 +11,6 @@ const extractValues = <T extends object, K extends keyof T>(array: T[], key: K):
     , [] as T[K][]);
   } catch (error) {
     console.log('Error in extractValues function: ', error);
-    return [] as T[K][];
+    throw new Error(`Error in extractValues function: ${error}`);
   }
 }
